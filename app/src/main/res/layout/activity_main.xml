@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/LogoutBtn"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/OuterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/UserText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:paddingStart="16dp"
+                android:text="@string/greetings"
+                android:textAlignment="viewStart"
+                android:textColor="@color/slate_blue"
+                android:textSize="60sp"
+                tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+            <LinearLayout
+                android:id="@+id/InnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/slate_blue"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/BasicCalBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:text="@string/basic_calculator"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+                <Button
+                    android:id="@+id/AdvCalBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:paddingStart="16dp"
+                    android:text="@string/advance_calculator"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry" />
+
+                <Button
+                    android:id="@+id/ChatBotBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:text="@string/chat_bot"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+                <Button
+                    android:id="@+id/BMICalBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:text="@string/bmi_calculator"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+                <Button
+                    android:id="@+id/SecondScreenBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:text="@string/second_screen"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+                <Button
+                    android:id="@+id/LyricsAppBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:text="@string/lyrics_viewer"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+                <Button
+                    android:id="@+id/DatBetBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:text="@string/data_between_activities"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+                <Button
+                    android:id="@+id/accountBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:text="@string/check_account"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+                <Button
+                    android:id="@+id/numerologyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/slate_blue"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:text="@string/numerology"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:onClick="LogoutBtn_OnClick"
+        android:paddingStart="16dp"
+        android:text="@string/logout"
+        android:textAlignment="viewStart"
+        android:textColor="@color/slate_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="RtlSymmetry,UsingOnClickInXml"
+        tools:layout_editor_absoluteX="-4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

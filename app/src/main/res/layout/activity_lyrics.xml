@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LyricsActivity.LyricsActivity">
+
+    <LinearLayout
+        android:id="@+id/OuterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/UserText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:paddingStart="16dp"
+            android:text="Main Menu"
+            android:textAlignment="viewStart"
+            android:textColor="@color/slate_blue"
+            android:textSize="60sp"
+            tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+        <LinearLayout
+            android:id="@+id/InnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/slate_blue"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/track1"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/slate_blue"
+                android:fadingEdge="none"
+                android:onClick="onClick"
+                android:paddingStart="16dp"
+                android:text="@string/hello_world_title"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/track2"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/slate_blue"
+                android:fadingEdge="none"
+                android:onClick="onClick"
+                android:paddingStart="16dp"
+                android:text="@string/fly_me_to_the_moon_title"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/track3"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/slate_blue"
+                android:fadingEdge="none"
+                android:onClick="onClick"
+                android:paddingStart="16dp"
+                android:text="@string/bohemian_rhapsody_title"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/track4"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/slate_blue"
+                android:fadingEdge="none"
+                android:onClick="onClick"
+                android:paddingStart="16dp"
+                android:text="@string/chivalry_is_dead_title"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/ConfirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/slate_blue"
+                android:fadingEdge="none"
+                android:onClick="onClick"
+                android:paddingStart="16dp"
+                android:text="@string/first_sight_title"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

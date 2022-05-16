@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataBetweenActivity.Activity1">
+
+    <LinearLayout
+        android:id="@+id/OuterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/UserText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:paddingStart="16dp"
+            android:text="@string/data_between_activities"
+            android:textAlignment="viewStart"
+            android:textColor="@color/slate_blue"
+            android:textSize="60sp"
+            tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+        <LinearLayout
+            android:id="@+id/InnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/slate_blue"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/UserDefTextbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/enter_text"
+                android:inputType="textPersonName"
+                android:padding="@dimen/text_margin"
+                android:textColor="@color/black"
+                android:textColorHint="#78909C"
+                android:textSize="20sp"
+                tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/ConfirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/slate_blue"
+                android:fadingEdge="none"
+                android:onClick="Send_OnClick"
+                android:paddingStart="16dp"
+                android:text="@string/send"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

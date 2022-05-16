@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="company_name">LOREM IPSUM</string>
+    <string name="greetings">Hello</string>
+    <string name="basic_calculator">Basic Calculator</string>
+    <string name="advance_calculator">Advance Calculator</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="chat_bot">Chat-bot</string>
+    <string name="lyrics_viewer">Lyrics Viewer</string>
+    <string name="title_activity_lyrics_viewer">LyricsViewer</string>
+    <string name="data_between_activities">Data Between Activities</string>
+    <string name="second_screen">Second Screen</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_lastname">Enter Lastname</string>
+    <string name="enter_firstname">Enter Firstname</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="sign_up">Sign-up</string>
+    <string name="send">Send</string>
+    <string name="calculate">Calculate</string>
+    <string name="check_account">Check Account</string>
+    <string name="account_details">Account Details</string>
+    <string name="enter_program">Enter Program</string>
+    <string name="course_1">Course 1</string>
+    <string name="course_2">Course 2</string>
+    <string name="course_3">Course 3</string>
+    <string name="numerology">Numerology</string>
+    <string name="enter_full_name">Enter your full name</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumerologyActivity">
+
+    <LinearLayout
+        android:id="@+id/OuterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:paddingStart="16dp"
+            android:text="@string/numerology"
+            android:textAlignment="viewStart"
+            android:textColor="@color/slate_blue"
+            android:textSize="60sp"
+            tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/NameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enter_full_name"
+            android:inputType="textNoSuggestions"
+            android:textColorHint="#757575"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/StartBtn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="@color/slate_blue"
+            android:onClick="onClick"
+            android:paddingStart="16dp"
+            android:text="Start"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
